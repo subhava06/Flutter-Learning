@@ -24,30 +24,51 @@ class _ListGridStateState extends State<ListGridState> {
       elevation: 8,
       ),
       body: Container(
-        child: Center(
-          child:
-          ListView.builder(
-            itemCount: fruits.length,
-            itemBuilder: (context,index){
-              return Card(child: ListTile(
-                focusColor: Colors.yellow,
-                hoverColor: Colors.yellow,
-                onTap: ()
-                  // using this way, we could print each list elem individually along with some text
-                  print(("This is the fruit ${fruits_person['fruits'][index]}"));
-                },
-                leading: Icon(Icons.person_4_sharp),
-                title: Text(fruits_person['fruits'][index]),
-                subtitle: Text(fruits_person['whoAte'][index]),
-                //Text(fruits[index]) <- this is old way,
-               // subtitle: Text(whoAte[index]),
-              ),
-              );
-            },
+       /* child: ListView.builder(
+          itemCount: fruits.length,
+          itemBuilder: (context,index){
+            return Card(child: ListTile(
+              focusColor: Colors.yellow,
+              hoverColor: Colors.yellow,
+              onTap: ()
+                // using this way, we could print each list elem individually along with some text
+                print(("This is the fruit ${fruits_person['fruits'][index]}"));
+              },
+              leading: Icon(Icons.person_4_sharp),
+              title: Text(fruits_person['fruits'][index]),
+              subtitle: Text(fruits_person['whoAte'][index]),
+              //Text(fruits[index]) <- this is old way,
+             // subtitle: Text(whoAte[index]),
+            ),
+            );
+          },
 
-          ),
+        ),*/
+        child: GridView(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
+        crossAxisSpacing: 20,mainAxisSpacing: 20,
+        childAspectRatio: 3/3),
+        children: [  // in childAspectRatio , 2 means width and 3 means height
+          Card (
+            child: Center(child: Text('Orange')),
         ),
-      )
+    Card (
+    child: Center(child: Text('Orange')),
+    ),
+    Card (
+    child: Center(child: Text('Orange')),
+    ),
+    Card (
+    child: Center(child: Text('Orange')),
+    ),
+    Card (
+    child: Center(child: Text('Orange')),
+    ),
+    Card (
+    child: Center(child: Text('Orange')),
+    ),
+          ],
+    ),
+      ),
     );
   }
 }
