@@ -12,10 +12,10 @@ class RowsCols extends StatelessWidget {
         title: Center(child: Text("Rows and Columns")),
       ) ,
       body: Container(
-        width: 200,
-        height: 200,
+        width: w,
+        height: h,
         color: Colors.yellow,
-        child: Wrap(
+        child: /*Wrap(
           direction: Axis.vertical,
          alignment: WrapAlignment.spaceEvenly,
          // mainAxisAlignment: MainAxisAlignment.start,
@@ -29,7 +29,22 @@ class RowsCols extends StatelessWidget {
             Container(height: 60, width:50, color: Colors.orange),
 
           ],
-        )
+        ),*/
+          Column(
+        //direction: Axis.vertical,
+        //alignment: WrapAlignment.spaceEvenly,
+         mainAxisAlignment: MainAxisAlignment.start,
+         crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          // Text("hsdiofhdoifnsdoincvosdnvsoinsdivnsdindndvoinvoivnsdosdpvso"),
+          Container(height: 60, width:50, color: Colors.red),
+          Container(height: 60, width:50, color: Colors.blue),
+          Container(height: 60, width:50, color: Colors.red),
+          Container(height: 60, width:50, color: Colors.blue),
+          Container(height: 60, width:50, color: Colors.orange),
+
+        ],
+      )
       ),
     );
   }
