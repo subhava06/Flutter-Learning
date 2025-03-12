@@ -44,30 +44,13 @@ class _ListGridStateState extends State<ListGridState> {
           },
 
         ),*/
-        child: GridView(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
-        crossAxisSpacing: 20,mainAxisSpacing: 20,
-        childAspectRatio: 3/3),
-        children: [  // in childAspectRatio , 2 means width and 3 means height
-          Card (
-            child: Center(child: Text('Orange')),
-        ),
-    Card (
-    child: Center(child: Text('Orange')),
-    ),
-    Card (
-    child: Center(child: Text('Orange')),
-    ),
-    Card (
-    child: Center(child: Text('Orange')),
-    ),
-    Card (
-    child: Center(child: Text('Orange')),
-    ),
-    Card (
-    child: Center(child: Text('Orange')),
-    ),
-          ],
-    ),
+        child: GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
+          itemCount: fruits.length,
+          itemBuilder:(context, index) {
+          return Card(child: Center(child: Text(fruits[index]),
+          ),
+          );
+          },),
       ),
     );
   }
