@@ -68,3 +68,11 @@ class _BottomNavState extends State<BottomNav> {
     );
   }
 }
+
+/*
+The user taps a navigation item → onTap: onTapped is triggered.
+2️⃣ onTapped(index) updates selectedIndex using setState().
+3️⃣ pageController.jumpToPage(selectedIndex) moves to the selected page in PageView.
+4️⃣ currentIndex: selectedIndex ensures the correct tab is highlighted.
+This setup makes your Bottom Navigation Bar fully functional with dynamic page switching!
+*/
