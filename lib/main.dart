@@ -8,6 +8,7 @@ import 'package:thirty_widgets/widgets/rowscols.dart';
 import 'package:thirty_widgets/widgets/snackbar.dart';
 import 'package:thirty_widgets/widgets/drawer.dart';
 import 'package:thirty_widgets/widgets/image.dart';
+import 'package:thirty_widgets/widgets/bottomSheet.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -18,10 +19,11 @@ class MyApp extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColor: const Color.fromARGB(255, 90, 55, 149),
+        brightness: Brightness.light,
+        primaryColor:  Colors.orange,
+       // colorScheme: ColorScheme.white(primary: Colors.orange),//updated way to apply primary color
       ),
-      home:  AlertWidget(),
+      home:  BottomSheetWidget(),
     );
   }
 }

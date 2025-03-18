@@ -31,7 +31,7 @@ Future<void> showMyDialog(BuildContext context)async {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       title: Text('This is an alert'),
       content: SingleChildScrollView( // this gives appropriate size to the the dialog box to adjust acc to the content
-        child: ListBody(
+        child: ListBody( // A column-like widget that arranges its children (texts) vertically.
           children: [
             Text('This is a demo'),
             Text('This is Subhava Ojha'),
