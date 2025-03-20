@@ -13,6 +13,7 @@ import 'package:thirty_widgets/widgets/image.dart';
 import 'package:thirty_widgets/widgets/bottomSheet.dart';
 import 'package:thirty_widgets/widgets/bottomnav.dart';
 import 'package:thirty_widgets/widgets/form.dart';
+import 'package:thirty_widgets/widgets/stack.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         primaryColor:  Colors.orange,
        // colorScheme: ColorScheme.white(primary: Colors.orange),//updated way to apply primary color
       ),
-      home:  FormWidget(),
+      home:  StackWidget(),
     );
   }
 }
