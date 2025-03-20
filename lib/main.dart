@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         primaryColor:  Colors.orange,
        // colorScheme: ColorScheme.white(primary: Colors.orange),//updated way to apply primary color
       ),
-      home:  BottomNav(),
+      home:  FormWidget(),
     );
   }
 }
