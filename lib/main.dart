@@ -14,6 +14,7 @@ import 'package:thirty_widgets/widgets/bottomSheet.dart';
 import 'package:thirty_widgets/widgets/bottomnav.dart';
 import 'package:thirty_widgets/widgets/form.dart';
 import 'package:thirty_widgets/widgets/stack.dart';
+import 'package:thirty_widgets/widgets/tabbar.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         primaryColor:  Colors.orange,
        // colorScheme: ColorScheme.white(primary: Colors.orange),//updated way to apply primary color
       ),
-      home:  StackWidget(),
+      home:  TabBarWidget(),
     );
   }
 }
