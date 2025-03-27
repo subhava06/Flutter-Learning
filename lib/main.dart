@@ -3,10 +3,12 @@ import 'package:thirty_widgets/widgets/alert.dart';
 import 'package:thirty_widgets/widgets/animated_text.dart';
 import 'package:thirty_widgets/widgets/button.dart';
 import 'package:thirty_widgets/widgets/container_sized.dart';
+import 'package:thirty_widgets/widgets/day19ui.dart';
 import 'package:thirty_widgets/widgets/dismissible.dart';
 import 'package:thirty_widgets/widgets/dropdown.dart';
 import 'package:thirty_widgets/widgets/imagepicker.dart';
 import 'package:thirty_widgets/widgets/list_grid.dart';
+import 'package:thirty_widgets/widgets/location.dart';
 import 'package:thirty_widgets/widgets/rowscols.dart';
 import 'package:thirty_widgets/widgets/snackbar.dart';
 import 'package:thirty_widgets/widgets/drawer.dart';
@@ -26,11 +28,11 @@ class MyApp extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.light,
+        brightness: Brightness.dark,
         primaryColor:  Colors.orange,
        // colorScheme: ColorScheme.white(primary: Colors.orange),//updated way to apply primary color
       ),
-      home: ImagePickerWidget(),
+      home: Day19(),
     );
   }
 }
