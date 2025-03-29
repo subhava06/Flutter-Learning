@@ -4,6 +4,7 @@ import 'package:thirty_widgets/widgets/animated_text.dart';
 import 'package:thirty_widgets/widgets/button.dart';
 import 'package:thirty_widgets/widgets/container_sized.dart';
 import 'package:thirty_widgets/widgets/day19ui.dart';
+import 'package:thirty_widgets/widgets/day20.dart';
 import 'package:thirty_widgets/widgets/dismissible.dart';
 import 'package:thirty_widgets/widgets/dropdown.dart';
 import 'package:thirty_widgets/widgets/imagepicker.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         primaryColor:  Colors.orange,
        // colorScheme: ColorScheme.white(primary: Colors.orange),//updated way to apply primary color
       ),
-      home: Day19(),
+      home: Day20(),
     );
   }
 }
